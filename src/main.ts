@@ -17,7 +17,7 @@ config({
 const { values } = parseArgs({
   options: {
     prompt: { type: "string", short: "p" },
-    provider: { type: "string", default: "groq" },
+    provider: { type: "string", default: "anthropic" },
     model: { type: "string" },
   },
 });
@@ -110,3 +110,7 @@ async function callModel1(): Promise<AssistantMessage> {
 // console.log(final.usage.input_tokens)
 // console.log(final.usage.output_tokens)
 // console.log(final.stop_reason)
+
+
+
+
